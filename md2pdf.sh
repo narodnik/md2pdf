@@ -14,5 +14,5 @@ pandoc "$1" \
     `#-V mainfont="Helvetica Neue"` \
     `#-V monofont="DejaVu Sans Mono"` \
     --pdf-engine=xelatex \
-    -o "$2"
+    -o "${1%.md}.pdf"
 
