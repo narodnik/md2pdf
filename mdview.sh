@@ -1,5 +1,6 @@
 #!/bin/bash
-TEMPFILE=$(mktemp /tmp/mdview-XXXXX.pdf)
-md2pdf "$1" $TEMPFILE
-qpdfview $TEMPFILE &> /dev/null
+FILENAME="$(basename "$1")"
+OUTFILE="/tmp/${FILENAME%.md}.pdf"
+md2pdf "$1" "$OUTFILE"
+qpdfview $OUTFILE &> /dev/null
 
