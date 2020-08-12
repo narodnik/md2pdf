@@ -3,6 +3,10 @@ Install:
 * pandoc
 * tllocalmgr-git
 
+Mac additional deps:
+
+* pdflatex
+
 Run these commands:
 
 ```
