@@ -1,13 +1,9 @@
 Install:
 
 * pandoc
-* tllocalmgr-git
+* tllocalmgr-git (basictex for mac)
 
-Mac additional deps:
-
-* pdflatex
-
-Run these commands:
+Run these commands (linux):
 
 ```
 $ tllocalmgr
@@ -15,6 +11,14 @@ $ tllocalmgr
 > install enumitem
 > texhash
 > quit
+```
+
+Run these commands (mac):
+
+```
+$ tlmgr install sectsty
+$ tlmgr install enumitem
+$ texhash
 ```
 
 Create a symlink in `~/.local/bin/` to both `md2pdf` and `mdview`:
