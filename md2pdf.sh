@@ -13,7 +13,6 @@ OUTPUT=$(realpath $OUTPUT)
 
 cd /tmp/
 pandoc "$INPUT" \
-    `#-f gfm` \
     --toc \
     --toc-depth 3 \
     --include-in-header $DIR/custom.tex \
@@ -22,8 +21,5 @@ pandoc "$INPUT" \
     -V linkcolor:blue \
     -V geometry:a4paper \
     -V geometry:margin=2cm \
-    `#-V mainfont="Helvetica Neue"` \
-    `#-V monofont="DejaVu Sans Mono"` \
-    --pdf-engine=xelatex \
     -o "$OUTPUT"
 
