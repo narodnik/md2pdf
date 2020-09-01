@@ -8,7 +8,11 @@ else
     OUTPUT="${1%.md}.pdf"
 fi
 
-pandoc "$1" \
+INPUT=$(realpath $1)
+OUTPUT=$(realpath $OUTPUT)
+
+cd /tmp/
+pandoc "$INPUT" \
     `#-f gfm` \
     --toc \
     --toc-depth 3 \
