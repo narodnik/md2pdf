@@ -14,6 +14,7 @@ pandoc "$1" \
     --toc-depth 3 \
     --include-in-header $DIR/custom.tex \
     --include-in-header $DIR/disable_float.tex \
+    --number-sections \
     -V linkcolor:blue \
     -V geometry:a4paper \
     -V geometry:margin=2cm \
