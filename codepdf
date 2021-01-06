@@ -4,7 +4,8 @@ echo $PATH
 FILENAME="$(basename $FILEPATH)"
 OUTNAME="/tmp/$FILENAME.md"
 PDFNAME="/tmp/$FILENAME.pdf"
-echo "\`\`\`$1" > $OUTNAME
+echo "% $FILENAME" > $OUTNAME
+echo "\`\`\`$1" >> $OUTNAME
 cat $FILEPATH >> $OUTNAME
 echo "\`\`\`" >> $OUTNAME
 pandoc $OUTNAME \
