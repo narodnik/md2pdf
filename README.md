@@ -9,6 +9,7 @@ Run these commands (linux):
 $ tllocalmgr
 > install sectsty
 > install enumitem
+> install framed
 > texhash
 > quit
 ```

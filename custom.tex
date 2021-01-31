@@ -11,3 +11,10 @@
 % level three
 \setlist[itemize,3]{label=$\star$}
 
+% Give a grey background to blockquotes
+\usepackage{framed}
+\usepackage{xcolor}
+\let\oldquote=\quote
+\let\endoldquote=\endquote
+\colorlet{shadecolor}{gray!15}
+\renewenvironment{quote}{\begin{shaded*}\begin{oldquote}}{\end{oldquote}\end{shaded*}}
