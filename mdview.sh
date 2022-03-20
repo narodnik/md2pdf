@@ -2,5 +2,4 @@
 FILENAME="$(basename "$1")"
 OUTFILE="/tmp/${FILENAME%.md}.pdf"
 md2pdf "$1" "$OUTFILE"
-zathura --mode fullscreen $OUTFILE &> /dev/null
-
+( zathura "$OUTFILE" ; rm -f "$OUTFILE" ) &> /dev/null
