@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#DIR="$(dirname "$(readlink "$0")")"    ## macos
 DIR="$(dirname "$(readlink -f "$0")")"
 
 if [[ $# -gt 1 ]]; then
@@ -7,6 +8,11 @@ if [[ $# -gt 1 ]]; then
 else
     OUTPUT="${1%.md}.pdf"
 fi
+
+# realpath function for macos
+#realpath() {
+#    [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
+#}
 
 INPUT=$(realpath $1)
 OUTPUT=$(realpath $OUTPUT)
