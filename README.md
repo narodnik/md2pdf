@@ -13,6 +13,7 @@ git clone https://github.com/narodnik/md2pdf
 cd ~/.local/bin/
 ln -s ~/.local/src/md2pdf/md2pdf.sh md2pdf
 ln -s ~/.local/src/md2pdf/mdview.sh mdview
+ln -s ~/.local/src/md2pdf/mdauto.sh mdauto
 ```
 
 ```bash
