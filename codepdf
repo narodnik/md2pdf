@@ -11,5 +11,4 @@ echo "\`\`\`" >> $OUTNAME
 pandoc $OUTNAME \
     -V geometry:margin=2cm \
     -o $PDFNAME
-evince $PDFNAME
 

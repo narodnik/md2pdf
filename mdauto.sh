@@ -6,6 +6,6 @@ OUTFILE="/tmp/${FILENAME%.md}.pdf"
 md2pdf "$1" "$OUTFILE"
 echo $1 | entr -nrs "md2pdf \"$1\" \"$OUTFILE\"" &
 entr_pid="$!"
-( $READER "$OUTFILE" ; rm -f "$OUTFILE" ) > /dev/null
+( $READER "$OUTFILE"  ) > /dev/null
 kill $entr_pid
 
