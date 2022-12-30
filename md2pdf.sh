@@ -13,6 +13,7 @@ OUTPUT=$(realpath $OUTPUT)
 
 cd /tmp/
 pandoc "$INPUT" \
+    --pdf-engine=xelatex \
     --toc \
     --toc-depth 3 \
     --include-in-header $DIR/custom.tex \
