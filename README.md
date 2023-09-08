@@ -8,6 +8,7 @@ Install:
 
 * pandoc
 * texlive-most
+* pandoc-crossref (optional)
 
 Create a symlink in `~/.local/bin/` to both `md2pdf` and `mdview`:
 
