@@ -13,6 +13,7 @@ OUTPUT=$(realpath $OUTPUT)
 
 cd /tmp/
 pandoc "$INPUT" \
+    -F pandoc-crossref \
     --pdf-engine=xelatex \
     --toc \
     --toc-depth 3 \
