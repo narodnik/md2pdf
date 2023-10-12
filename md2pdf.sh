@@ -26,3 +26,7 @@ pandoc "$INPUT" \
     --resource-path=$(dirname $INPUT) \
     -o "$OUTPUT"
 
+# -V geometry:papersize="{6in,7.5in}" \
+# -V geometry:margin=0.1cm \
+# -V fontsize=17pt \
+
